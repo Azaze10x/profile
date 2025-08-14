@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokai Thippawat — Project Leader / PM-PO / Game Producer</title>
+  <meta name="description" content="Portfolio & resume of Pokai Thippawat — Project Leader / PM-PO / Game Producer with 10+ years in platforms, apps, and games.">
+  <link rel="canonical" href="https://Azaze10x.github.io/<your-repo>/">
+  <meta property="og:title" content="Pokai Thippawat — Project Leader / PM-PO / Game Producer">
+  <meta property="og:description" content="Portfolio & resume of Pokai Thippawat — Project Leader / PM-PO / Game Producer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Azaze10x.github.io/<your-repo>/">
+  <meta property="og:image" content="https://Azaze10x.github.io/<your-repo>/og-image.png">
+  <meta name="theme-color" content="#0ea5e9">
+  <style>
+    :root{
+      --bg:#0b0d10; --bg-elev:#111418; --text:#e6edf3; --muted:#9aa4b2; --line:#1f2530;
+      --accent:#0ea5e9; --accent-2:#22d3ee; --card:#0e1116; --chip:#101825; --ok:#10b981; --warn:#f59e0b;
+      --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f7fafc; --bg-elev:#ffffff; --text:#0f172a; --muted:#475569; --line:#e2e8f0; --card:#ffffff; --chip:#eef2ff; }
+    }
+    /* ✅ Manual Light Mode override via toggle */
+    :root[data-theme="light"]{
+      --bg:#f7fafc; --bg-elev:#ffffff; --text:#0f172a; --muted:#475569;
+      --line:#e2e8f0; --card:#ffffff; --chip:#eef2ff;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,13,16,.7);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+    .brand .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+    .menu{display:flex;gap:18px;align-items:center}
+    .menu a{padding:10px 6px;border-radius:10px}
+    .menu a.active,.menu a:hover{background:var(--chip)}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#001018;border:0;border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer;box-shadow:var(--shadow)}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+    .btn.small{padding:8px 12px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:36px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card.pad{padding:22px}
+    h1{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:0}
+    h2{font-size:clamp(22px,3vw,28px);margin:0 0 10px}
+    h3{font-size:18px;margin:0 0 8px}
+    p{margin:0 0 12px;color:var(--muted)}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+    .kpi{background:var(--bg-elev);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+    .kpi b{display:block;font-size:22px;color:var(--text)}
+    .grid{display:grid;gap:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:var(--chip);border:1px solid var(--line);padding:8px 10px;border-radius:999px;font-size:14px}
+    .list{display:grid;gap:12px}
+    .item{display:grid;gap:6px;padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--bg-elev)}
+    .muted{color:var(--muted)}
+    .row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+    .badges .b{font-size:12px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;background:var(--chip)}
+    .timeline{display:grid;gap:14px}
+    .timeline .role{display:grid;gap:6px;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--bg-elev)}
+    footer{margin:36px 0 18px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+    .mobile-only{display:none}
+    .theme{border:1px solid var(--line);background:var(--bg-elev);border-radius:10px;padding:6px 10px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .menu{display:none}
+      .mobile-only{display:inline-flex}
+    }
+    /* === Avatar & game === */
+    .avatar{display:block;max-width:100%;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .thumb{aspect-ratio:16/9;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:var(--bg-elev)}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .game-wrap{background:var(--bg-elev);border:1px solid var(--line);border-radius:14px;padding:12px}
+    .game-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    .canvas-wrap{position:relative}
+    canvas.pixel{width:100%;height:auto;image-rendering:pixelated;border-radius:12px;border:1px solid var(--line);background:#0b0d10}
+    .game-msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;color:#ffffffcc;font-weight:700;text-shadow:0 2px 6px rgba(0,0,0,.4)}
+
+    /* === Gates (blur-with-overlay) === */
+    section.gate{ position:relative }
+    .gate .gate-blur{ transition:filter .25s ease }
+    .gate .lock-overlay{ position:absolute; inset:0; display:none; align-items:center; justify-content:center; text-align:center; gap:10px; background:rgba(0,0,0,.45); backdrop-filter:blur(2px); border-radius:14px; padding:24px }
+    .gate.locked .lock-overlay{ display:flex }
+    .gate.locked .gate-blur{ filter:blur(2px) saturate(.6); pointer-events:none; user-select:none }
+    .lock-box{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow) }
+    .lock-box b{ color:var(--text) }
+
+    /* === Game UI bits === */
+    .chips{ display:flex; flex-wrap:wrap; gap:8px }
+    .chip.skin{ cursor:pointer; opacity:.95 }
+    .progress{ margin-top:10px; background:var(--bg-elev); border:1px solid var(--line); border-radius:999px; height:12px; position:relative; overflow:hidden }
+    .progress .bar{ position:absolute; left:0; top:0; bottom:0; width:0%; background:linear-gradient(90deg,var(--accent),var(--accent-2)); }
+    .progress .tick{ position:absolute; top:0; bottom:0; width:2px; background:var(--line) }
+    .progress .tick span{ position:absolute; top:14px; transform:translateX(-50%); font-size:12px; color:var(--muted) }
+
+    /* ✅ Featured project (showcase) in Hero */
+    .item.showcase{
+      display:grid;
+      grid-template-columns:1.2fr 1.8fr;
+      gap:12px;
+      align-items:center;
+      margin-top:16px;
+      background:var(--bg-elev);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px;
+    }
+    .item.showcase h3{ margin:0 0 6px }
+    .item.showcase .badges{ display:flex; gap:6px; margin-top:6px }
+    .item.showcase .thumb{ border-radius:10px; border:1px solid var(--line); overflow:hidden }
+    @media (max-width:800px){ .item.showcase{ grid-template-columns:1fr } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand"><span class="dot"></span> Pokai Thippawat</div>
+        <div class="menu" role="navigation" aria-label="Primary">
+          <a href="#about" class="active">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#game">Game</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="row">
+          <button id="themeToggle" class="theme" aria-label="Toggle theme">🌗</button>
+          <a class="btn small mobile-only" href="mailto:pokai.thi@email.com">Hire me</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="container hero" id="about">
+      <div class="card pad">
+        <h1>Project Leader / PM-PO / Game Producer</h1>
+        <p>10+ years delivering end-to-end digital platforms, mobile/web apps, and game products. Combines PM/PO rigor with full-stack execution, shipping from concept to launch and live-ops. Proven in AI/ML initiatives, blockchain utilities, and data-driven roadmaps. Adept at leading cross-functional teams, running Agile at scale, and steering budgets, procurement, and vendor ecosystems to on-time, on-budget outcomes.</p>
+        <div class="row" style="margin-top:14px">
+          <a class="btn" href="resume.pdf" download>Download Résumé (PDF)</a>
+          <a class="btn ghost" href="#projects">See Projects</a>
+        </div>
+
+        <!-- ✅ Featured showcase instead of KPIs -->
+        <article class="item showcase">
+          <div class="thumb">
+            <img src="assets/images/game-portfolio.webp"
+                 alt="Web-based game portfolio preview"
+                 loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3>Arcade Mania</h3>
+            <p class="muted">Android,iOS&Web-based Game Portfolio</p>
+            <div class="badges"><span class="b">Game Director</span> <span class="b">Developer</span> <span class="b">Live-ops</span> <span class="b">Producer</span></div>
+            <div class="row" style="margin-top:8px">
+              <a class="btn small" href="#projects">View all projects</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="card pad">
+        <h2>Quick Info</h2>
+        <picture>
+          <source type="image/webp" srcset="assets/images/profile@1x.webp 1x, assets/images/profile@2x.webp 2x">
+          <img src="assets/images/profile@1x.jpg" srcset="assets/images/profile@2x.jpg 2x" alt="Pokai Thippawat portrait" class="avatar" width="320" height="320" loading="eager" decoding="async">
+        </picture>
+        <div class="list">
+          <div class="item"><b>Location</b><span class="muted">Bangkok, Thailand</span></div>
+          <div class="item"><b>Email</b><span class="muted"><a href="mailto:pokai.thi@email.com">pokai.thi@email.com</a></span></div>
+          <div class="item"><b>LinkedIn</b><span class="muted"><a href="https://www.linkedin.com/in/pokai-thippawat" target="_blank" rel="noopener">linkedin.com/in/pokai-thippawat</a></span></div>
+          <div class="item"><b>GitHub</b><span class="muted"><a href="https://github.com/Azaze10x" target="_blank" rel="noopener">github.com/Azaze10x</a></span></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- GAME -->
+    <section class="container" id="game">
+      <div class="card pad game-wrap">
+        <div class="game-head">
+          <h2>Mini Game: 16-bit Runner (Tap to Jump)</h2>
+          <div class="row" style="gap:8px">
+            <span class="mono muted">Best: <b id="bestScore">0</b></span>
+            <button id="startBtn" class="btn small" type="button">Play</button>
+            <button id="muteBtn" class="btn small" type="button" aria-pressed="false" title="Mute/Unmute">🔊 Sound</button>
+            <button id="restartBtn" class="btn small" type="button">Restart</button>
+          </div>
+        </div>
+        <div class="canvas-wrap">
+          <canvas id="runner" class="pixel" width="320" height="60" aria-label="16-bit runner game"></canvas>
+          <div id="gameMsg" class="game-msg"></div>
+          <audio id="sJump" src="assets/audio/jump.mp3" preload="auto"></audio>
+          <audio id="sHit" src="assets/audio/hit.mp3" preload="auto"></audio>
+          <audio id="sCoin" src="assets/audio/coin.mp3" preload="auto"></audio>
+        </div>
+        <div class="row" style="margin-top:10px; align-items:center; gap:10px">
+          <strong>Skin:</strong>
+          <div class="chips" id="skinChips">
+            <span class="chip skin" data-skin="robot">Robot</span>
+            <span class="chip skin" data-skin="orc">Orc</span>
+            <span class="chip skin" data-skin="demon">Demon</span>
+          </div>
+        </div>
+        <div class="progress" id="unlockProgress" aria-label="Unlock progress to 200">
+          <div class="bar" style="width:0%"></div>
+          <div class="tick" style="left:50%"><span>100</span></div>
+          <div class="tick" style="left:100%"><span>200</span></div>
+        </div>
+        <p class="muted" style="margin-top:8px">
+          Tip: Tap/Click or press <span class="mono">Space</span> to jump. Avoid obstacles to score.
+          Unlock <strong>Experience</strong> at 100 pts, and <strong>Projects</strong> at 200 pts.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="container" id="skills">
+      <div class="grid" style="grid-template-columns:1fr;align-items:start">
+        <div class="card pad">
+          <h2>Core Competencies</h2>
+          <div class="skills">
+            <span class="chip">Product Strategy & Roadmaps</span>
+            <span class="chip">Agile/Scrum • Backlog</span>
+            <span class="chip">Cross-Functional Leadership</span>
+            <span class="chip">AI/ML Integration</span>
+            <span class="chip">Generative AI Tools</span>
+            <span class="chip">Web3/Blockchain Utilities</span>
+            <span class="chip">Game Production & Live-Ops</span>
+            <span class="chip">Vendor/RFP & Procurement</span>
+            <span class="chip">Budgeting & Risk</span>
+            <span class="chip">Analytics & Experimentation</span>
+            <span class="chip">Stakeholder Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE (LOCKED @100 — BLUR ONLY) -->
+    <section class="container gate" id="experience" data-gate="100">
+      <div class="gate-blur">
+        <div class="card pad">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="role">
+              <h3>T&B Media Global — Project Manager, Digital Platform</h3>
+              <div class="muted">Dec 2023 – Present · Bangkok, TH</div>
+              <ul>
+                <li>Oversaw multiple Blockchain/Web3 platforms; aligned utility features to market trends and business goals.</li>
+                <li>Led cross-functional delivery; owned planning, dependencies, and stakeholder comms.</li>
+                <li>Managed procurement, vendors, resource planning, and risks for on-time, on-budget outcomes.</li>
+                <li>Drove discovery, requirements, scope, estimation, and led RFP/vendor selection.</li>
+              </ul>
+            </div>
+            <div class="role">
+              <h3>Smart Bits Games — Game Producer</h3>
+              <div class="muted">Aug 2021 – Feb 2023 · Bangkok, TH</div>
+              <ul>
+                <li>Led internal & partner teams delivering high-quality web/mobile game titles end-to-end.</li>
+                <li>Mentored and managed 20+ people; instituted rituals, velocity tracking, and quality gates.</li>
+                <li>Delivered 10+ initiatives using Agile, including web-based online and claw-machine games.</li>
+              </ul>
+            </div>
+            <div class="role">
+              <h3>Coforge (Consultant @ PTT Global Chemical) — Project Manager / Project Leader</h3>
+              <div class="muted">May 2020 – Jul 2021 · Bangkok, TH</div>
+              <ul>
+                <li>Drove ML/Advanced Analytics programs and executive reporting.</li>
+                <li>Initiated ML for pricing forecasts and a unified research app to reduce data loss.</li>
+              </ul>
+            </div>
+            <div class="role">
+              <h3>Siam Commercial Bank — Project Manager, Digital Platform</h3>
+              <div class="muted">Oct 2019 – May 2020 · Bangkok, TH</div>
+              <ul>
+                <li>Managed Partner Ecosystem & Sandbox Open API; enabled configurable partner onboarding.</li>
+                <li>Led up to 20 developers; owned backlog, sprints, and risk management.</li>
+              </ul>
+            </div>
+            <div class="role">
+              <h3>Nexon (Thailand) — Business Development & QA Manager</h3>
+              <div class="muted">Jul 2017 – Oct 2019 · Bangkok, TH</div>
+              <ul>
+                <li>Established teams and QA processes; launched 2 PC online and several mobile titles.</li>
+                <li>Coordinated TH & SEA launches with international studios; expanded licensing & BD.</li>
+              </ul>
+            </div>
+            <div class="role">
+              <h3>Infinity Levels (Thailand) — PM / Lead Developers Team</h3>
+              <div class="muted">Mar 2016 – Jun 2017 · Bangkok, TH</div>
+              <ul>
+                <li>Led international dev teams for 3D game products; managed partnerships.</li>
+                <li>Launched <em>Blade of Revenge</em> with LINE Thailand.</li>
+              </ul>
+            </div>
+            <div class="role">
+              <h3>Mitsubishi Motors (Thailand) — Quality Assurance Engineer</h3>
+              <div class="muted">Jul 2014 – Jul 2015 · Laem Chabang, TH</div>
+              <ul>
+                <li>Analyzed quality reports; coordinated root-cause and corrective actions.</li>
+                <li>QA representative for Triton launch; helped prevent ~200 line defects in first 6 months.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lock-overlay">
+        <div class="lock-box">
+          <b class="lock-msg">🔒 Locked — Score 100+ to unlock</b>
+          <div class="muted">Play the <a href="#game" class="btn small">mini-game</a> to reveal experience.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (LOCKED @200 — BLUR ONLY) -->
+    <section class="container gate" id="projects" data-gate="200">
+      <div class="gate-blur">
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+          <article class="card pad">
+            <div class="thumb">
+              <img src="assets/images/scb.webp" alt="gc preview" loading="lazy" decoding="async">
+            </div>
+            <h3>Open API Sandbox</h3>
+            <p class="muted">Partner onboarding with configurable integrations.</p>
+            <div class="badges"><span class="b">API Sandbox</span> <span class="b">Banking</span> <span class="b">Project Manager</span></div>
+          </article>
+          <article class="card pad">
+            <div class="thumb">
+              <img src="assets/images/gc.webp" alt="scb preview" loading="lazy" decoding="async">
+            </div>
+            <h3>Advanced Analytics(ML) Pricing Forecast Projects</h3>
+            <p class="muted">Initiated Machine Learning projects for pricing decisions; aligned data sources, milestones, dashboards.</p>
+            <div class="badges"><span class="b">Machine Learning</span> <span class="b">Project Lead</span> <span class="b">Advanced Analytics</span></div>
+          </article>
+          <article class="card pad">
+            <div class="thumb">
+              <img src="assets/images/game-portfolio.webp" alt="Web-based game portfolio preview" loading="lazy" decoding="async">
+            </div>
+            <h3>Arcade Mania</h3>
+            <p class="muted">Android,iOS&Web-based Game Portfolio</p>
+            <div class="badges"><span class="b">Game Director</span> <span class="b">Developer</span> <span class="b">Live-ops</span> <span class="b">Game Producer</span></div>
+          </article>
+          <article class="card pad">
+            <div class="thumb">
+              <img src="assets/images/mittamatrix.webp" alt="mittamatrix preview" loading="lazy" decoding="async">
+            </div>
+            <h3>Web3 Utilities Platforms</h3>
+            <p class="muted">Iterated utility features for blockchain-enabled initiatives; metrics & release plans.</p>
+            <div class="badges"><span class="b">Social Gamification</span> <span class="b">Project Manager</span> <span class="b">Product Lead</span></div>
+          </article>
+          <article class="card pad">
+            <div class="thumb">
+              <img src="assets/images/nexon.webp" alt="nexon preview" loading="lazy" decoding="async">
+            </div>
+            <h3>Nexon Thailand</h3>
+            <p class="muted">Mobile & PC Games Publishing, product quality, team enhancement, analytics, and partnership development.</p>
+            <div class="badges"><span class="b">Business Development Leader</span> <span class="b">Game Launcher Project Manager</span> <span class="b">QA Head/Manager</span></div>
+          </article>
+        </div>
+      </div>
+      <div class="lock-overlay">
+        <div class="lock-box">
+          <b class="lock-msg">🔒 Locked — Score 200+ to unlock</b>
+          <div class="muted">Score 200+ in the <a href="#game" class="btn small">mini-game</a> to reveal projects.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container" id="contact">
+      <div class="card pad">
+        <h2>Contact</h2>
+        <p>Open to Connect.</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:pokai.thi@email.com">pokai.thi@email.com</a>
+          &nbsp;·&nbsp;
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pokai-thippawat" target="_blank" rel="noopener">linkedin.com/in/pokai-thippawat</a>
+        </p>
+        <div class="row" style="margin-top:10px">
+          <a class="btn" href="mailto:pokai.thi@email.com">Email me</a>
+          <a class="btn ghost" href="#about">Back to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span>© <span id="year"></span> Pokai Thippawat</span>
+    <span class="mono">Deployed on GitHub Pages</span>
+  </footer>
+
+  <!-- GAME SCRIPT -->
+  <script>
+  (function(){
+    const cvs = document.getElementById('runner');
+    if(!cvs) return; const ctx = cvs.getContext('2d');
+    ctx.imageSmoothingEnabled = false; cvs.style.cursor = 'pointer';
+    const W=cvs.width, H=cvs.height; const groundY = H-20;
+    let state='ready', t=0, spawnT=0, coinT=0, score=0, best = Number(localStorage.getItem('runnerBest')||0);
+    const G=0.43, JUMP=-6.6;
+
+    const snd = { jump: document.getElementById('sJump'), hit: document.getElementById('sHit'), coin: document.getElementById('sCoin') };
+    let muted = localStorage.getItem('runnerMuted') === '1';
+    const muteBtn = document.getElementById('muteBtn');
+    function updateMuteUI(){ if(!muteBtn) return; muteBtn.textContent = muted ? '🔇 Muted' : '🔊 Sound'; muteBtn.setAttribute('aria-pressed', String(muted)); }
+    function play(id){ if(muted) return; const a = snd[id]; if(a){ try{ a.currentTime=0; a.play(); }catch(_){} } }
+    muteBtn?.addEventListener('click',()=>{ muted=!muted; localStorage.setItem('runnerMuted', muted?'1':'0'); updateMuteUI(); });
+    updateMuteUI();
+
+    const skins = {
+      robot: { label:'Robot', head:'#94a3b8', visor:'#22d3ee', plate:'#64748b', body:'#9aa4b2', dark:'#475569', light:'#cbd5e1', wire:'#ef4444' },
+      orc:   { label:'Orc',   skin:'#2aa36b', eye:'#111827', armor:'#6b7280', trim:'#f59e0b', cloth:'#b45309', tusk:'#ffffff', dark:'#166b48', light:'#47c78d' },
+      demon: { label:'Demon', skin:'#ef4444', eye:'#fcd34d', horn:'#111827', chest:'#7f1d1d', trim:'#991b1b', dark:'#7f1d1d', light:'#f87171' }
+    };
+    let currentSkin = localStorage.getItem('runnerSkin')||'robot';
+    window.runnerSetSkin = function(s){ if(!skins[s]) return false; currentSkin=s; localStorage.setItem('runnerSkin', s); return true; };
+
+    const env={ sky1:'#0a0f1e', sky2:'#131b3a', glow:'#18224b', neon1:'#22d3ee', neon2:'#f472b6', neon3:'#a78bfa', road:'#0b1020', lane:'#38bdf8', window:'#f8fafc' };
+    const P = 14;
+    const player={x:48,y:groundY-P,w:P,h:P,vy:0,onGround:true,step:0};
+    const obstacles=[]; const coins=[];
+
+    function setMsg(txt){ const el=document.getElementById('gameMsg'); if(el){ el.textContent = txt; } }
+    function reset(){ obstacles.length=0; coins.length=0; score=0; t=0; spawnT=0; coinT=60; Object.assign(player,{x:48,y:groundY-P,w:P,h:P,vy:0,onGround:true,step:0}); state='ready'; setMsg('Tap/Click or press Space to start'); }
+    function start(){ if(state!=='running'){ state='running'; setMsg(''); } }
+    function jump(){ if(state==='ready'){ start(); } if(state!=='running') return; if(player.onGround){ player.vy=JUMP; player.onGround=false; play('jump'); } }
+
+    function prand(n){ return Math.abs(Math.sin(n*12.9898+78.233))%1; }
+
+    function drawSky(){
+      const {sky1,sky2,glow}=env;
+      ctx.fillStyle=sky1; ctx.fillRect(0,0,W,H);
+      ctx.fillStyle=sky2; ctx.fillRect(0,0,W,H-18);
+      ctx.fillStyle=glow; ctx.fillRect(0,H-28,W,8);
+      ctx.fillStyle='#b3c5ef';
+      for(let i=0;i<30;i++){ const px=(i*37 + t*0.2)%W; const py=4 + (i*7)% (H-26); ctx.fillRect(px,py,1,1); }
+    }
+    function drawBuildings(speed, seed, baseY, gap, color, winColor){
+      const shift=(t*speed)%(gap);
+      for(let i=-1;i<Math.ceil(W/gap)+2;i++){
+        const px = i*gap - shift;
+        const h = 8 + Math.floor(prand(i+seed)*14);
+        const bw = gap-2;
+        ctx.fillStyle=color;
+        ctx.fillRect(px, baseY-h, bw, h);
+        const cols = Math.max(2, Math.floor(bw/3));
+        const rows = Math.max(2, Math.floor(h/3));
+        for(let r=0;r<rows;r++){
+          for(let c=0;c<cols;c++){
+            const lit = prand(r*13 + c*7 + Math.floor(t/8)+ seed*3) > 0.82;
+            if(lit){ ctx.fillStyle=winColor; ctx.fillRect(px+1+c*3, baseY-h+1+r*3, 1,1); }
+          }
+        }
+        if(prand(i*5+seed*11)>0.9){ ctx.fillStyle=seed%2?env.neon1:env.neon2; ctx.fillRect(px+Math.floor(bw/3), baseY-h-3, Math.floor(bw/3), 2); }
+      }
+    }
+    function drawRoad(){
+      ctx.fillStyle=env.road; ctx.fillRect(0,groundY,W,H-groundY);
+      ctx.fillStyle=env.lane; for(let x=-(t*3%18); x<W; x+=18){ ctx.fillRect(x,groundY+6,8,2); }
+    }
+    function drawBackground(){
+      drawSky();
+      drawBuildings(0.2, 3, H-34, 20, '#0f1531', '#a7f3d0');
+      drawBuildings(0.45, 7, H-28, 24, '#141c3f', '#fef3c7');
+      drawBuildings(0.9, 11, H-22, 28, '#1b2553', '#f472b6');
+      drawRoad();
+    }
+
+    const r=(v)=>Math.max(1,Math.round((player.h/16)*v));
+
+    function drawRobot(){ const s=skins.robot; const {x,y,w}=player;
+      ctx.fillStyle=s.plate; ctx.fillRect(x+r(4),y-r(6), r(8), r(6));
+      ctx.fillStyle=s.dark; ctx.fillRect(x+r(4),y-r(6), r(8), r(1));
+      ctx.fillStyle=s.visor; ctx.fillRect(x+r(5),y-r(3), r(6), r(2));
+      ctx.fillStyle=s.light; ctx.fillRect(x+r(8),y-r(8), r(2), r(2));
+      ctx.fillStyle=s.body; ctx.fillRect(x+r(3),y+r(2), r(10), r(9));
+      ctx.fillStyle=s.dark; ctx.fillRect(x+r(3),y+r(2), r(10), r(1));
+      ctx.fillStyle=s.light; ctx.fillRect(x+r(4),y+r(3), r(3), r(1));
+      ctx.fillStyle=s.wire; ctx.fillRect(x+r(1),y+r(6), r(2), r(2));
+      ctx.fillStyle=s.plate; ctx.fillRect(x+r(1),y+r(4), r(2), r(4)); ctx.fillRect(x+r(13),y+r(4), r(2), r(4));
+      const frame=Math.floor(player.step/6)%2; ctx.fillStyle=s.plate; if(player.onGround){ if(frame===0){ ctx.fillRect(x+r(3),y+r(12), r(4), r(3)); ctx.fillRect(x+r(9),y+r(13), r(4), r(2)); } else { ctx.fillRect(x+r(3),y+r(13), r(4), r(2)); ctx.fillRect(x+r(9),y+r(12), r(4), r(3)); } } else { ctx.fillRect(x+r(3),y+r(12), r(10), r(2)); }
+      ctx.fillStyle='rgba(0,0,0,0.25)'; const shw=r(14), shh=r(3); const shx=x+(w-shw)/2, shy=groundY+r(8); ctx.fillRect(shx,shy,shw,shh);
+    }
+    function drawOrc(){ const s=skins.orc; const {x,y,w}=player;
+      ctx.fillStyle=s.skin; ctx.fillRect(x+r(4),y-r(5), r(8), r(6));
+      ctx.fillStyle=s.dark; ctx.fillRect(x+r(4),y-r(5), r(8), r(1));
+      ctx.fillStyle=s.eye; ctx.fillRect(x+r(6),y-r(3), r(2), r(2)); ctx.fillRect(x+r(9),y-r(3), r(2), r(2));
+      ctx.fillStyle=s.tusk; ctx.fillRect(x+r(5),y, r(2), r(2)); ctx.fillRect(x+r(9),y, r(2), r(2));
+      ctx.fillStyle=s.armor; ctx.fillRect(x+r(3),y+r(2), r(10), r(9));
+      ctx.fillStyle=s.trim; ctx.fillRect(x+r(3),y+r(9), r(10), r(2));
+      ctx.fillStyle=s.armor; ctx.fillRect(x+r(1),y+r(4), r(2), r(3)); ctx.fillRect(x+r(13),y+r(4), r(2), r(3));
+      const frame=Math.floor(player.step/6)%2; ctx.fillStyle=s.cloth; if(player.onGround){ if(frame===0){ ctx.fillRect(x+r(3),y+r(12), r(4), r(3)); ctx.fillRect(x+r(9),y+r(13), r(4), r(2)); } else { ctx.fillRect(x+r(3),y+r(13), r(4), r(2)); ctx.fillRect(x+r(9),y+r(12), r(4), r(3)); } } else { ctx.fillRect(x+r(3),y+r(12), r(10), r(2)); }
+      ctx.fillStyle='rgba(0,0,0,0.25)'; const shw=r(14), shh=r(3); const shx=x+(w-shw)/2, shy=groundY+r(8); ctx.fillRect(shx,shy,shw,shh);
+    }
+    function drawDemon(){ const s=skins.demon; const {x,y,w}=player;
+      ctx.fillStyle=s.skin; ctx.fillRect(x+r(4),y-r(5), r(8), r(6));
+      ctx.fillStyle=s.horn; ctx.fillRect(x+r(5),y-r(7), r(2), r(2)); ctx.fillRect(x+r(9),y-r(7), r(2), r(2));
+      ctx.fillStyle=s.eye; ctx.fillRect(x+r(6),y-r(3), r(2), r(2)); ctx.fillRect(x+r(9),y-r(3), r(2), r(2));
+      ctx.fillStyle=s.chest; ctx.fillRect(x+r(3),y+r(2), r(10), r(9));
+      ctx.fillStyle=s.trim; ctx.fillRect(x+r(3),y+r(9), r(10), r(2));
+      const frame=Math.floor(player.step/6)%2; ctx.fillStyle=s.skin; if(player.onGround){ if(frame===0){ ctx.fillRect(x+r(3),y+r(12), r(4), r(3)); ctx.fillRect(x+r(9),y+r(13), r(4), r(2)); } else { ctx.fillRect(x+r(3),y+r(13), r(4), r(2)); ctx.fillRect(x+r(9),y+r(12), r(4), r(3)); } } else { ctx.fillRect(x+r(3),y+r(12), r(10), r(2)); }
+      ctx.fillStyle='rgba(0,0,0,0.25)'; const shw=r(14), shh=r(3); const shx=x+(w-shw)/2, shy=groundY+r(8); ctx.fillRect(shx,shy,shw,shh);
+    }
+    function drawCharacter(){ const s=currentSkin; if(s==='orc') return drawOrc(); if(s==='demon') return drawDemon(); return drawRobot(); }
+
+    function spawnObstacle(){
+      const type = Math.random() < 0.55 ? 'cone' : 'bin';
+      const minH = Math.max(10, Math.round(player.h * 0.95));
+      const maxH = Math.max(minH + 1, Math.round(player.h * 1.5));
+      const h = minH + Math.floor(Math.random() * (maxH - minH + 1));
+      const w = type === 'cone' ? Math.max(8, Math.round(player.h * 0.9)) : Math.max(10, Math.round(player.h * 1.05));
+      const o = {type, x: W + 10, y: groundY + (player.h - 2 - h), w, h};
+      if(type==='bin'){ o.rot = (Math.random()-0.5)*0.2; o.spin = (Math.random()<0.5?-1:1)*(0.02+Math.random()*0.02); }
+      if(type==='cone'){ o.blinkPhase = Math.random()*Math.PI*2; }
+      obstacles.push(o);
+    }
+    function drawCone(o){
+      const bw = o.w, bh = o.h;
+      ctx.fillStyle = '#f97316';
+      ctx.beginPath(); ctx.moveTo(o.x + bw/2, o.y); ctx.lineTo(o.x + bw, o.y + bh); ctx.lineTo(o.x, o.y + bh); ctx.closePath(); ctx.fill();
+      ctx.fillStyle = '#f8fafc';
+      const bandH = Math.max(2, Math.floor(bh * 0.12));
+      ctx.fillRect(o.x + Math.floor(bw * 0.15), o.y + Math.floor(bh * 0.55), Math.floor(bw * 0.7), bandH);
+      ctx.fillStyle = '#ea580c'; ctx.fillRect(o.x, o.y + bh - 2, bw, 2);
+      const bx = o.x + bw/2, by = o.y + Math.max(2, Math.floor(bh*0.08));
+      const on = Math.sin(t/8 + (o.blinkPhase||0)) > 0;
+      ctx.fillStyle = on ? env.neon1 : '#334155';
+      ctx.beginPath(); ctx.arc(bx, by, 2, 0, Math.PI*2); ctx.fill();
+    }
+    function drawBin(o){
+      const bw = o.w, bh = o.h;
+      o.rot += o.spin; if(o.rot > 0.35 || o.rot < -0.35) o.spin *= -1;
+      const cx = o.x + bw/2, cy = o.y + bh;
+      ctx.save(); ctx.translate(cx, cy); ctx.rotate(o.rot); ctx.translate(-cx, -cy);
+      ctx.fillStyle = '#64748b'; ctx.fillRect(o.x, o.y, bw, bh);
+      ctx.fillStyle = '#475569'; ctx.fillRect(o.x - 1, o.y - 3, bw + 2, 3);
+      ctx.fillStyle = '#cbd5e1'; ctx.fillRect(o.x + Math.floor(bw*0.35), o.y + Math.floor(bh*0.25), Math.max(2, Math.floor(bw*0.3)), 1);
+      ctx.fillStyle = '#93c5fd'; ctx.fillRect(o.x + 2, o.y + 2, Math.max(1, Math.floor(bw*0.2)), 1);
+      ctx.fillStyle = '#0f172a'; ctx.fillRect(o.x + 1, o.y + bh - 1, 2, 2); ctx.fillRect(o.x + bw - 3, o.y + bh - 1, 2, 2);
+      ctx.restore();
+    }
+    function drawObstacles(speed){
+      for(const o of obstacles){
+        o.x -= speed;
+        if(o.type==='cone') drawCone(o); else drawBin(o);
+      }
+      while(obstacles.length && obstacles[0].x+obstacles[0].w<-20){ obstacles.shift(); }
+    }
+
+    function spawnCoin(){ const cy = groundY - (10 + Math.floor(Math.random()*14)); const sz = Math.max(6, Math.round(player.h*0.7)); coins.push({x:W+10,y:cy,w:sz,h:sz}); }
+    function drawCoin(c,speed){
+      c.x -= speed;
+      const cx = c.x + c.w/2, cy = c.y + c.h/2; const rad = Math.max(3, Math.floor(Math.min(c.w,c.h)/2));
+      ctx.fillStyle = '#f8d24b'; ctx.beginPath(); ctx.arc(cx, cy, rad, 0, Math.PI*2); ctx.fill();
+      ctx.strokeStyle = '#f1c232'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(cx, cy, Math.max(1, rad-2), 0, Math.PI*2); ctx.stroke();
+      ctx.fillStyle = '#ffffff55'; ctx.beginPath(); ctx.arc(cx - rad/3, cy - rad/3, Math.max(1, rad/3), 0, Math.PI*2); ctx.fill();
+    }
+    function drawCoins(speed){ for(const c of coins){ drawCoin(c,speed); } while(coins.length && coins[0].x+coins[0].w<-20){ coins.shift(); } }
+
+    const collide=(a,b)=> a.x < b.x+b.w && a.x+a.w > b.x && a.y < b.y+b.h && a.y+a.h > b.y;
+    function drawHud(){
+      ctx.fillStyle='rgba(10,15,32,0.65)'; ctx.fillRect(2,2,92,18);
+      ctx.fillStyle='#e2e8f0'; ctx.font='7px monospace';
+      ctx.fillText('SCORE: '+Math.floor(score),6,9);
+      ctx.fillText('BEST:  '+Math.floor(best),6,16);
+      const bestEl=document.getElementById('bestScore'); if(bestEl) bestEl.textContent = Math.floor(best);
+    }
+
+    function loop(){ requestAnimationFrame(loop); t++; if(state==='running'){
+        const speed=Math.min(2 + t/420, 4.3);
+        spawnT -= 1; if(spawnT<=0){ spawnObstacle(); spawnT = 70 + Math.random()*60 - speed*6; }
+        coinT -= 1; if(coinT<=0){ spawnCoin(); coinT = 110 + Math.random()*90; }
+        player.vy += G; player.y += player.vy;
+        if(player.y >= groundY-player.h){ player.y=groundY-player.h; player.vy=0; player.onGround=true; } else { player.onGround=false; }
+        player.step += speed; score += 0.1*speed;
+        for(const o of obstacles){ if(collide(player,o)){ state='over'; best=Math.max(best,Math.floor(score)); localStorage.setItem('runnerBest', String(best)); if(window.updateGates) window.updateGates(); play('hit'); setMsg('Game Over • Tap/Click or press Space to restart'); } }
+        for(let i=coins.length-1;i>=0;i--){ const c=coins[i]; if(collide(player,c)){ coins.splice(i,1); score += 10; play('coin'); } }
+      }
+      drawBackground(); const spd=state==='running'? Math.min(2+t/420,4.3):0; drawObstacles(spd); drawCoins(spd); drawCharacter(); drawHud();
+    }
+
+    function onPress(e){ if(state==='over'){ reset(); start(); e.preventDefault(); return; } if(state==='ready'){ start(); } jump(); e.preventDefault(); }
+    function onKey(e){
+      if(e.code==='Space'||e.code==='ArrowUp'){ onPress(e); }
+      if(e.code==='KeyR'){ reset(); }
+    }
+
+    document.getElementById('restartBtn')?.addEventListener('click', ()=>{ reset(); start(); });
+    document.getElementById('startBtn')?.addEventListener('click', ()=>{ if(state==='over') reset(); start(); });
+    document.querySelector('.game-wrap')?.addEventListener('click', ()=>{ if(state!=='running'){ start(); } else { jump(); } });
+    document.querySelector('.game-wrap')?.addEventListener('touchstart', (e)=>{ if(state!=='running'){ start(); } else { jump(); } }, {passive:false});
+    cvs.addEventListener('mousedown', onPress); cvs.addEventListener('touchstart', onPress, {passive:false}); window.addEventListener('keydown', onKey);
+
+    reset(); loop();
+  })();
+
+  // Gates update
+  function updateGates(){
+    const best = Number(localStorage.getItem('runnerBest')||0);
+    document.querySelectorAll('section.gate').forEach(sec=>{
+      const thr = Number(sec.dataset.gate||0);
+      const locked = best < thr; sec.classList.toggle('locked', locked);
+      const msg = sec.querySelector('.lock-msg'); if(msg){ msg.textContent = `🔒 Locked — Score ${thr}+ to unlock${best? ` (Best: ${Math.floor(best)})`:''}`; }
+    });
+    const pct = Math.max(0, Math.min(100, (best/200)*100));
+    const bar = document.querySelector('#unlockProgress .bar'); if(bar){ bar.style.width = pct + '%'; }
+    const bestEl=document.getElementById('bestScore'); if(bestEl) bestEl.textContent = Math.floor(best);
+  }
+  document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('year').textContent = new Date().getFullYear();
+    updateGates();
+    document.getElementById('skinChips')?.addEventListener('click', (e)=>{
+      const el = e.target.closest('.skin'); if(!el) return;
+      const skin = el.getAttribute('data-skin'); if(!skin) return;
+      if(window.runnerSetSkin && window.runnerSetSkin(skin)){
+        document.querySelectorAll('#skinChips .skin').forEach(s=>s.classList.toggle('active', s.getAttribute('data-skin')===skin));
+      }
+    });
+    const initSkin = localStorage.getItem('runnerSkin')||'robot';
+    document.querySelectorAll('#skinChips .skin').forEach(s=>s.classList.toggle('active', s.getAttribute('data-skin')===initSkin));
+  });
+  </script>
+
+  <!-- Click lock overlays to jump to the game -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelectorAll('.lock-overlay').forEach(function(el){
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', function(e){
+          if(e.target.closest('a')) return;
+          const game = document.getElementById('game');
+          if(game){ game.scrollIntoView({behavior:'smooth', block:'start'}); location.hash = '#game'; }
+        });
+      });
+    });
+  </script>
+
+  <!-- ✅ Theme toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const root = document.documentElement;
+      const btn  = document.getElementById('themeToggle');
+      const saved = localStorage.getItem('theme'); // "light" or null
+      if (saved === 'light') root.setAttribute('data-theme','light');
+
+      function updateIcon(){
+        const isLight = root.getAttribute('data-theme') === 'light';
+        btn.textContent = isLight ? '🌞' : '🌗';
+        btn.setAttribute('aria-label', isLight ? 'Switch to dark' : 'Switch to light');
+      }
+      updateIcon();
+
+      btn?.addEventListener('click', () => {
+        const isLight = root.getAttribute('data-theme') === 'light';
+        if (isLight) {
+          root.removeAttribute('data-theme');
+          localStorage.removeItem('theme');
+        } else {
+          root.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+        }
+        updateIcon();
+      });
+    });
+  </script>
+</body>
+</html>
