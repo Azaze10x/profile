@@ -116,11 +116,6 @@
     .item.showcase .thumb{ border-radius:10px; border:1px solid var(--line); overflow:hidden }
     @media (max-width:800px){ .item.showcase{ grid-template-columns:1fr } }
   </style>
-  <style>
-    iframe#tidio-chat-iframe {
-      pointer-events: none !important;
-    }
-  </style>
 </head>
 <script src="//code.tidio.co/ywjkzqkbaxle39owq1ozbdgjzzptb6f8.js" async></script>
 <body>
@@ -594,6 +589,16 @@
 
     function onPress(e){ if(state==='over'){ reset(); start(); e.preventDefault(); return; } if(state==='ready'){ start(); } jump(); e.preventDefault(); }
     function onKey(e){
+      // เช็คว่าผู้ใช้กำลังพิมพ์ในช่องแชท Tidio หรือช่อง input อื่นๆ หรือไม่
+      if (document.activeElement && document.activeElement.id === 'tidio-chat-iframe') {
+        return; // ถ้าใช่ ให้ออกจากฟังก์ชันทันที ปล่อยให้ Tidio ทำงานปกติ
+      }
+      const targetNode = e.target.nodeName;
+      if (targetNode === 'INPUT' || targetNode === 'TEXTAREA' || targetNode === 'SELECT') {
+        return; // ถ้ากำลังพิมพ์ในช่อง input อื่นๆ ก็ให้ทำงานปกติเช่นกัน
+      }
+
+      // ถ้าไม่ได้พิมพ์ในช่องแชท ก็ให้เกมทำงานตามเดิม
       if(e.code==='Space'||e.code==='ArrowUp'){ onPress(e); }
       if(e.code==='KeyR'){ reset(); }
     }
